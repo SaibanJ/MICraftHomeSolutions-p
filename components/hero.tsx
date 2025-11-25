@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { CheckCircle2 } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -22,10 +24,10 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 text-base">
-                <a href="#contact">Get Free Estimate</a>
+                <Link href="#contact">Get Free Estimate</Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base bg-transparent">
-                <a href="#services">View Services</a>
+                <Link href="#services">View Services</Link>
               </Button>
             </div>
             <div className="flex items-center gap-8 pt-4">
@@ -47,9 +49,11 @@ export function Hero() {
           </div>
           <div className="relative">
             <div className="aspect-square overflow-hidden rounded-2xl border border-border bg-muted">
-              <img
+              <Image
                 src="/images/4b25bcae-316b-4afc-aebb.jpeg"
                 alt="Quality screened porch construction by MICraft Home Solutions"
+                width={800}
+                height={800}
                 className="h-full w-full object-cover"
               />
             </div>

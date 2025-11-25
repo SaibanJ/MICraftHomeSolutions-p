@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Star, Quote } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const testimonials = [
   {
@@ -108,9 +109,11 @@ export default function TestimonialsPage() {
                 <Card key={index} className="bg-card border-border hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4 mb-4">
-                      <img 
+                      <Image 
                         src={testimonial.image || "/placeholder.svg"} 
                         alt={testimonial.name}
+                        width={64}
+                        height={64}
                         className="w-16 h-16 rounded-full object-cover"
                       />
                       <div className="flex-1">
