@@ -266,38 +266,38 @@ export default function GalleryPage() {
             </div>
           </div>
 
-          {/* More Projects */}
-          <div className="mb-8">
-            <h2 className="font-sans text-2xl md:text-3xl font-bold text-foreground text-center">More Projects</h2>
-          </div>
+          {/*/!* More Projects *!/*/}
+          {/*<div className="mb-8">*/}
+          {/*  <h2 className="font-sans text-2xl md:text-3xl font-bold text-foreground text-center">More Projects</h2>*/}
+          {/*</div>*/}
 
-          {/* Masonry Grid Layout */}
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="break-inside-avoid group relative overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all hover:shadow-lg hover:border-primary/50"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
+          {/*/!* Masonry Grid Layout *!/*/}
+          {/*<div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">*/}
+          {/*  {projects.map((project, index) => (*/}
+          {/*    <div*/}
+          {/*      key={index}*/}
+          {/*      className="break-inside-avoid group relative overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all hover:shadow-lg hover:border-primary/50"*/}
+          {/*    >*/}
+          {/*      <div className="relative overflow-hidden">*/}
+          {/*        <Image*/}
+          {/*          src={project.image || "/placeholder.svg"}*/}
+          {/*          alt={project.title}*/}
+          {/*          width={800}*/}
+          {/*          height={600}*/}
+          {/*          className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"*/}
+          {/*        />*/}
+          {/*        <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />*/}
+          {/*      </div>*/}
 
-                <div className="p-4">
-                  <Badge variant="secondary" className="mb-2 text-xs">
-                    {project.category}
-                  </Badge>
-                  <h3 className="font-sans text-lg font-semibold text-foreground text-balance">{project.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/*      <div className="p-4">*/}
+          {/*        <Badge variant="secondary" className="mb-2 text-xs">*/}
+          {/*          {project.category}*/}
+          {/*        </Badge>*/}
+          {/*        <h3 className="font-sans text-lg font-semibold text-foreground text-balance">{project.title}</h3>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
+          {/*</div>*/}
 
           {/* Call to Action at Bottom */}
           <div className="mt-16 text-center">
