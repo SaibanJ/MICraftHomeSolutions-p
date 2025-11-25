@@ -67,8 +67,8 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="font-sans text-sm font-semibold text-foreground">Contact</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <li>(555) 123-4567</li>
-              <li>contact@michiganhandyman.com</li>
+              <li>5178625050</li>
+              <li>Alex@micrafthomesolutions.com</li>
               <li>{"Serving Michigan & surrounding areas"}</li>
             </ul>
           </div>
