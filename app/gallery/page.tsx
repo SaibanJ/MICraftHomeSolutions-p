@@ -65,69 +65,69 @@ const trimCarpentryProject = {
     },
   ],
 }
-
-const projects = [
-  {
-    title: "Modern Kitchen Renovation",
-    category: "Appliance Installation",
-    image: "/modern-kitchen-with-newly-installed-appliances.jpg",
-  },
-  {
-    title: "Living Room Paint Job",
-    category: "Painting",
-    image: "/freshly-painted-living-room-with-neutral-colors.jpg",
-  },
-  {
-    title: "Drywall Repair & Texturing",
-    category: "Drywall Repair",
-    image: "/smooth-drywall-repair-work-before-and-after.jpg",
-  },
-  {
-    title: "Luxury Vinyl Flooring",
-    category: "Flooring",
-    image: "/luxury-vinyl-plank-flooring-installation-in-modern.jpg",
-  },
-  {
-    title: "Outdoor Deck Pressure Washing",
-    category: "Pressure Washing",
-    image: "/pressure-washed-wooden-deck-transformation.jpg",
-  },
-  {
-    title: "Professional TV Mounting",
-    category: "TV Mounting",
-    image: "/wall-mounted-flat-screen-tv-with-hidden-cables.jpg",
-  },
-  {
-    title: "Bathroom Fixture Installation",
-    category: "Plumbing",
-    image: "/modern-bathroom-with-new-faucet-and-fixtures-insta.jpg",
-  },
-  {
-    title: "Home Office Setup",
-    category: "Furniture Assembly",
-    image: "/assembled-home-office-furniture-and-desk-setup.jpg",
-  },
-  {
-    title: "Exterior House Painting",
-    category: "Painting",
-    image: "/freshly-painted-exterior-of-beautiful-michigan-hom.jpg",
-  },
-  {
-    title: "Hardwood Floor Refinishing",
-    category: "Flooring",
-    image: "/refinished-hardwood-floors-gleaming-in-sunlight.jpg",
-  },
-  {
-    title: "Gutter Cleaning Service",
-    category: "Gutter Cleaning",
-    image: "/clean-gutters-on-residential-home-after-maintenanc.jpg",
-  },
-  {
-    title: "Crown Molding Installation",
-    category: "General Projects",
-    image: "/elegant-crown-molding-installation-in-bedroom.jpg",
-  },
-]
+//
+// const projects = [
+//   {
+//     title: "Modern Kitchen Renovation",
+//     category: "Appliance Installation",
+//     image: "/modern-kitchen-with-newly-installed-appliances.jpg",
+//   },
+//   {
+//     title: "Living Room Paint Job",
+//     category: "Painting",
+//     image: "/freshly-painted-living-room-with-neutral-colors.jpg",
+//   },
+//   {
+//     title: "Drywall Repair & Texturing",
+//     category: "Drywall Repair",
+//     image: "/smooth-drywall-repair-work-before-and-after.jpg",
+//   },
+//   {
+//     title: "Luxury Vinyl Flooring",
+//     category: "Flooring",
+//     image: "/luxury-vinyl-plank-flooring-installation-in-modern.jpg",
+//   },
+//   {
+//     title: "Outdoor Deck Pressure Washing",
+//     category: "Pressure Washing",
+//     image: "/pressure-washed-wooden-deck-transformation.jpg",
+//   },
+//   {
+//     title: "Professional TV Mounting",
+//     category: "TV Mounting",
+//     image: "/wall-mounted-flat-screen-tv-with-hidden-cables.jpg",
+//   },
+//   {
+//     title: "Bathroom Fixture Installation",
+//     category: "Plumbing",
+//     image: "/modern-bathroom-with-new-faucet-and-fixtures-insta.jpg",
+//   },
+//   {
+//     title: "Home Office Setup",
+//     category: "Furniture Assembly",
+//     image: "/assembled-home-office-furniture-and-desk-setup.jpg",
+//   },
+//   {
+//     title: "Exterior House Painting",
+//     category: "Painting",
+//     image: "/freshly-painted-exterior-of-beautiful-michigan-hom.jpg",
+//   },
+//   {
+//     title: "Hardwood Floor Refinishing",
+//     category: "Flooring",
+//     image: "/refinished-hardwood-floors-gleaming-in-sunlight.jpg",
+//   },
+//   {
+//     title: "Gutter Cleaning Service",
+//     category: "Gutter Cleaning",
+//     image: "/clean-gutters-on-residential-home-after-maintenanc.jpg",
+//   },
+//   {
+//     title: "Crown Molding Installation",
+//     category: "General Projects",
+//     image: "/elegant-crown-molding-installation-in-bedroom.jpg",
+//   },
+// ]
 
 export default function GalleryPage() {
   return (
