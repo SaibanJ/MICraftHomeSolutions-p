@@ -37,8 +37,8 @@ export default function ServiceAreaPage() {
             <Header />
             <main className="flex-1">
                 {/* Hero Section */}
-                <section className=" pt-16 bg-gradient-to-br from-primary/5 via-background to-accent/5 py-16 md:py-24">
-                    <div className="container mx-auto px-4 md:px-6">
+                <section className="bg-gradient-to-br from-primary/5 via-background to-accent/5 py-16 md:py-24">
+                    <div className="container mx-auto pt-24 px-4 md:px-6">
                         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
                             <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6">
                                 <MapPin className="h-8 w-8 text-primary" />
