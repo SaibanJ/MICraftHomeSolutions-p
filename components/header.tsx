@@ -37,6 +37,12 @@ export function Header() {
             Testimonials
           </Link>
           <Link
+            href="/service-area"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Service Area
+          </Link>
+          <Link
             href="/#why-us"
             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
@@ -88,6 +94,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
+            </Link>
+            <Link
+              href="/service-area"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Service Area
             </Link>
             <Link
               href="/#why-us"

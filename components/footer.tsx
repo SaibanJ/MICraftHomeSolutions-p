@@ -53,7 +53,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-foreground transition-colors">
+                <a href="/service-area" className="hover:text-foreground transition-colors">
                   Service Areas
                 </a>
               </li>
