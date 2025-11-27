@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Upload, X } from "lucide-react"
 import { useState, useRef, type FormEvent, type DragEvent, type ChangeEvent } from "react"
+import Image from "next/image"
 
 export function CallToAction() {
   const [formData, setFormData] = useState({
@@ -59,20 +60,34 @@ export function CallToAction() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Here you would typically send the form data to your backend
-    // For now, we'll just log it and show a success message
-    console.log("Form Data:", formData)
-    console.log("Files:", files)
+    const body = new FormData()
+    body.append("name", formData.name)
+    body.append("phone", formData.phone)
+    body.append("email", formData.email)
+    body.append("message", formData.message)
+    files.forEach((file) => {
+      body.append("files", file)
+    })
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body,
+      })
 
-    alert("Thank you! We'll review your project details and get back to you soon.")
-
-    // Reset form
-    setFormData({ name: "", phone: "", email: "", message: "" })
-    setFiles([])
-    setIsSubmitting(false)
+      if (response.ok) {
+        alert("Thank you! We'll review your project details and get back to you soon.")
+        setFormData({ name: "", phone: "", email: "", message: "" })
+        setFiles([])
+      } else {
+        alert("Something went wrong. Please try again.")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      alert("Something went wrong. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -214,9 +229,11 @@ export function CallToAction() {
                           {files.map((file, index) => (
                               <div key={index} className="relative group">
                                 <div className="aspect-video rounded-lg overflow-hidden bg-muted">
-                                  <img
+                                  <Image
                                       src={URL.createObjectURL(file) || "/placeholder.svg"}
                                       alt={`Preview ${index + 1}`}
+                                      width={300}
+                                      height={300}
                                       className="w-full h-full object-cover"
                                   />
                                 </div>
