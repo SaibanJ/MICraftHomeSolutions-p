@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export function Hero() {
   return (
-      <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] overflow-hidden flex items-center">
+      <section className="relative w-full min-h-screen overflow-hidden flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
