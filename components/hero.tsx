@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export function Hero() {
   return (
-      <section className="relative w-full overflow-hidden flex items-center" style={{ height: "calc(100vh - 64px)" }}>
+      <section className="relative w-full h-screen overflow-hidden flex items-center pt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -16,9 +16,9 @@ export function Hero() {
         </div>
 
         {/* Content */}
-        <div className="container relative mx-auto px-4 md:px-6 py-16 md:py-24">
+        <div className="container relative mx-auto px-4 md:px-6">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-3 py-1 text-sm text-white w-fit mb-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-3 py-1 text-sm text-white w-fit mb-4">
               <CheckCircle2 className="h-4 w-4" />
               <span>Licensed Builder Serving Michigan & Surrounding Areas</span>
             </div>
@@ -30,7 +30,7 @@ export function Hero() {
                 "From major home renovations to everyday handyman needs, our licensed builder brings professional craftsmanship to projects of all sizes. We treat every home like our own."
               }
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button size="lg" asChild className="bg-primary text-primary-foreground hover:bg-primary/90 text-base">
                 <a href="#contact">Get Free Estimate</a>
               </Button>
