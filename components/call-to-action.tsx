@@ -94,7 +94,7 @@ export function CallToAction() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-medium text-foreground">(555) 123-4567</span>
+                    <span className="text-sm font-medium text-foreground">(517) 862-5050</span>
                     <span className="text-xs text-muted-foreground">Call or text anytime</span>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export function CallToAction() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-medium text-foreground">contact@michiganhandyman.com</span>
+                    <span className="text-sm font-medium text-foreground">Alex@micrafthomesolutions.com</span>
                     <span className="text-xs text-muted-foreground">Email us with photos of your project</span>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export function CallToAction() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-medium text-foreground">Serving All of Michigan</span>
+                    <span className="text-sm font-medium text-foreground">Serving Jackson & Washtenaw County</span>
                     <span className="text-xs text-muted-foreground">And surrounding areas</span>
                   </div>
                 </div>
