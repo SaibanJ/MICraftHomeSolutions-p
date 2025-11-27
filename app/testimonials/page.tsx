@@ -152,7 +152,7 @@ export default function TestimonialsPage() {
                 <div className="text-muted-foreground">Happy Customers</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">4.9</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">5.0</div>
                 <div className="text-muted-foreground">Average Rating</div>
               </div>
               <div>
@@ -160,7 +160,7 @@ export default function TestimonialsPage() {
                 <div className="text-muted-foreground">Projects Completed</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">100%</div>
                 <div className="text-muted-foreground">Satisfaction Rate</div>
               </div>
             </div>
