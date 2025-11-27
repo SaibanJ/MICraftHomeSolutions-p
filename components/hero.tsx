@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export function Hero() {
   return (
-      <section className="relative w-full min-h-screen overflow-hidden flex items-center">
+      <section className="relative w-full overflow-hidden flex items-center" style={{ height: "calc(100vh - 64px)" }}>
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
