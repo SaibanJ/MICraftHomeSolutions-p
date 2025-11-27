@@ -20,8 +20,29 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "MICraft Home Solutions LLC | Michigan Home Improvement & Handyman Services",
   description:
-    "Licensed builder serving Michigan with expert home improvement and handyman services. Fast, reliable, and affordable. Free estimates. Finish carpentry, drywall, painting, framing, siding, windows, flooring, and more.",
-  generator: "Next.js",
+      "Licensed builder serving Michigan with expert home improvement and handyman services. Fast, reliable, and affordable. Free estimates. Finish carpentry, drywall, painting, framing, siding, windows, flooring, and more.",
+  generator: "v0.app",
+  openGraph: {
+    title: "MICraft Home Solutions LLC | Michigan Home Improvement & Handyman Services",
+    description:
+        "Licensed builder serving Michigan with expert home improvement and handyman services. Fast, reliable, and affordable. Free estimates.",
+    images: [
+      {
+        url: "/images/1ffc50f0-841a-4d3f-ab06.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "MICraft Home Solutions - Custom entryway and carpentry work",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MICraft Home Solutions LLC | Michigan Home Improvement & Handyman Services",
+    description:
+        "Licensed builder serving Michigan with expert home improvement and handyman services. Fast, reliable, and affordable. Free estimates.",
+    images: ["/images/1ffc50f0-841a-4d3f-ab06.jpeg"],
+  },
   icons: {
     icon: [
       {
@@ -42,16 +63,16 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+      <html lang="en">
       <body className={`${inter.variable} ${roboto.variable} font-mono antialiased`}>
-        {children}
-        <Analytics />
+      {children}
+      <Analytics />
       </body>
-    </html>
+      </html>
   )
 }
