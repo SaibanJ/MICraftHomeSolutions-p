@@ -4,10 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Hammer, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,19 +21,21 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const isTransparent = isHomePage && !isScrolled
+
   return (
       <header
-          className={`${isScrolled ? "fixed" : "absolute"} top-0 z-50 w-full transition-all duration-300 ${
-              isScrolled
-                  ? "bg-background/95 backdrop-blur border-b border-border/40 supports-[backdrop-filter]:bg-background/60"
-                  : "bg-transparent"
+          className={`${isTransparent ? "absolute" : "fixed"} top-0 z-50 w-full transition-all duration-300 ${
+              isTransparent
+                  ? "bg-transparent"
+                  : "bg-background/95 backdrop-blur border-b border-border/40 supports-[backdrop-filter]:bg-background/60"
           }`}
       >
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
-            <Hammer className={`h-6 w-6 transition-colors ${isScrolled ? "text-primary" : "text-white"}`} />
+            <Hammer className={`h-6 w-6 transition-colors ${isTransparent ? "text-white" : "text-primary"}`} />
             <span
-                className={`font-sans text-xl font-bold transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}
+                className={`font-sans text-xl font-bold transition-colors ${isTransparent ? "text-white" : "text-foreground"}`}
             >
             MICraft Home Solutions
           </span>
@@ -41,7 +46,7 @@ export function Header() {
             <a
                 href="/#services"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Services
@@ -49,7 +54,7 @@ export function Header() {
             <Link
                 href="/gallery"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Gallery
@@ -57,7 +62,7 @@ export function Header() {
             <Link
                 href="/testimonials"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Testimonials
@@ -65,7 +70,7 @@ export function Header() {
             <Link
                 href="/service-area"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Service Area
@@ -73,7 +78,7 @@ export function Header() {
             <a
                 href="/#why-us"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Why Us
@@ -81,7 +86,7 @@ export function Header() {
             <a
                 href="/#contact"
                 className={`text-sm font-medium transition-colors ${
-                    isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/90 hover:text-white"
+                    isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               Contact
@@ -93,16 +98,16 @@ export function Header() {
                 asChild
                 size="sm"
                 className={`hidden md:flex transition-all ${
-                    isScrolled
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "bg-white/20 text-white backdrop-blur-sm hover:bg-white/30 border border-white/30"
+                    isTransparent
+                        ? "bg-white/20 text-white backdrop-blur-sm hover:bg-white/30 border border-white/30"
+                        : "bg-primary text-primary-foreground hover:bg-primary/90"
                 }`}
             >
               <a href="/#contact">Get Free Estimate</a>
             </Button>
 
             <button
-                className={`md:hidden transition-colors ${isScrolled ? "text-foreground" : "text-white"}`}
+                className={`md:hidden transition-colors ${isTransparent ? "text-white" : "text-foreground"}`}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
             >
