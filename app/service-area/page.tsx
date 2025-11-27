@@ -151,7 +151,7 @@ export default function ServiceAreaPage() {
                                     <a href="/#contact">Request Free Estimate</a>
                                 </Button>
                                 <Button asChild size="lg" variant="outline">
-                                    <a href="tel:+1234567890" className="flex items-center gap-2">
+                                    <a href="tel:+5178625050" className="flex items-center gap-2">
                                         <Phone className="h-4 w-4" />
                                         Call Us Today
                                     </a>
