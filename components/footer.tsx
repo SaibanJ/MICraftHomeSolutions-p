@@ -69,8 +69,16 @@ export function Footer() {
             <div className="flex flex-col gap-4">
               <h3 className="font-sans text-sm font-semibold text-foreground">Contact</h3>
               <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-                <li>(517) 862-5050</li>
-                <li>Alex@micrafthomesolutions.com</li>
+                <li>
+                  <a href="tel:+15178625050" className="hover:text-foreground transition-colors">
+                    (517) 862-5050
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:Alex@micrafthomesolutions.com" className="hover:text-foreground transition-colors">
+                    Alex@micrafthomesolutions.com
+                  </a>
+                </li>
                 <li>{"Serving Jackson & Washtenaw Counties"}</li>
                 <li className="mt-2">
                   <a
