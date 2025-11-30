@@ -40,7 +40,7 @@ export default function GalleryPage() {
             <Header />
 
             <section className="py-16 md:py-24">
-                <div className="container mx-auto px-4 md:px-6">
+                <div className="container mx-auto pt-24 px-4 md:px-6">
                     <div className="text-center mb-12">
                         <h1 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
                             Our Work Gallery
