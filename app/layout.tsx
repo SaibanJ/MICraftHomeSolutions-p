@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Roboto } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ScrollToTop } from "@/components/scroll-to-top";
 import "./globals.css"
 
 const inter = Inter({
@@ -238,6 +239,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${roboto.variable} font-mono antialiased`}>
       {children}
+      <ScrollToTop />
       <Analytics />
       </body>
       </html>
