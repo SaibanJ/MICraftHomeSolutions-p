@@ -20,7 +20,7 @@ export function Hero() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-3 py-1 text-sm text-white w-fit mb-4">
               <CheckCircle2 className="h-4 w-4" />
-              <span>Licensed Builder Serving Michigan & Surrounding Areas</span>
+              <span>Licensed Builder Serving Jackson & Washtenaw Counties</span>
             </div>
             <h1 className="font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl text-balance mb-6">
               {"Your Home Improvement & Handyman Experts"}

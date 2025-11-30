@@ -69,7 +69,7 @@ export function Footer() {
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
               <li>(517) 862-5050</li>
               <li>Alex@micrafthomesolutions.com</li>
-              <li>{"Serving Michigan & surrounding areas"}</li>
+              <li>{"Serving Jackson & Washtenaw Counties"}</li>
             </ul>
           </div>
         </div>
