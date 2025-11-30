@@ -4,6 +4,7 @@ import { Inter, Roboto } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ScrollToTop } from "@/components/scroll-to-top";
 import "./globals.css"
+import {AIChatWidget} from "@/components/ai-chat-widget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -240,6 +241,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${roboto.variable} font-mono antialiased`}>
       {children}
       <ScrollToTop />
+      <AIChatWidget />
       <Analytics />
       </body>
       </html>
