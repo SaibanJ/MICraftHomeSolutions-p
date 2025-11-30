@@ -62,7 +62,7 @@ export function WhyChooseUs() {
             </Card>
             <Card className="border-border/50 bg-card sm:mt-8">
               <CardContent className="flex flex-col gap-2 p-6">
-                <span className="font-sans text-4xl font-bold text-primary">500+</span>
+                <span className="font-sans text-4xl font-bold text-primary">1000+</span>
                 <span className="text-sm text-muted-foreground">Projects Completed</span>
               </CardContent>
             </Card>
