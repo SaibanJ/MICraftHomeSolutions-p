@@ -85,7 +85,7 @@ export function AIChatWidget() {
             {/* Chat Toggle Button */}
             <Button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-6 right-6 z-[60] h-14 w-14 rounded-full bg-primary shadow-lg hover:bg-primary/90 hover:scale-110 transition-all duration-300"
+                className="fixed bottom-24 right-6 z-[60] h-14 w-14 rounded-full bg-primary shadow-lg hover:bg-primary/90 hover:scale-110 transition-all duration-300"
                 aria-label="Open chat"
             >
                 {isOpen ? <X className="h-6 w-6 text-white" /> : <MessageCircle className="h-6 w-6 text-white" />}
@@ -93,7 +93,7 @@ export function AIChatWidget() {
 
             {/* Chat Window */}
             {isOpen && (
-                <div className="fixed bottom-24 right-6 z-[60] w-[380px] max-w-[calc(100vw-3rem)] h-[500px] bg-white rounded-lg shadow-2xl flex flex-col animate-in slide-in-from-bottom-5 duration-300">
+                <div className="fixed bottom-40 right-6 z-[60] w-[380px] max-w-[calc(100vw-3rem)] h-[500px] bg-white rounded-lg shadow-2xl flex flex-col animate-in slide-in-from-bottom-5 duration-300">
                     {/* Header */}
                     <div className="bg-primary text-white p-4 rounded-t-lg">
                         <h3 className="font-semibold text-lg">Chat with MICraft</h3>
