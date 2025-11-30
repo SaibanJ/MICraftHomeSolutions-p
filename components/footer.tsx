@@ -11,7 +11,7 @@ export function Footer() {
                 <span className="font-sans text-lg font-bold text-foreground">MICraft Home Solutions</span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                {"Your trusted partner for all home repairs, maintenance, and improvements in Michigan."}
+                {"Your trusted partner for all home repairs, maintenance, and improvements in Jackson and Washtenaw Counties."}
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -68,7 +68,7 @@ export function Footer() {
               <h3 className="font-sans text-sm font-semibold text-foreground">Contact</h3>
               <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <li>(517) 862-5050</li>
-                <li>alex@micrafthomesolutions.com</li>
+                <li>Alex@micrafthomesolutions.com</li>
                 <li>{"Serving Michigan & surrounding areas"}</li>
               </ul>
             </div>
