@@ -18,6 +18,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.micrafthomesolutions.com"),
   title: "MICraft Home Solutions LLC | Michigan Home Improvement & Handyman Services",
   description:
       "Licensed builder serving Michigan with expert home improvement and handyman services. Fast, reliable, and affordable. Free estimates. Finish carpentry, drywall, painting, framing, siding, windows, flooring, and more.",
