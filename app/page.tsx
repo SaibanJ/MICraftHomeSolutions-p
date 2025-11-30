@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         canonical: "https://micrafthomesolutions.com",
     },
     openGraph: {
-        title: "MICraft Home Solutions LLC | Licensed Builder Michigan",
+        title: "MICraft Home Solutions LLC | Licensed Home Improvement & Handyman Services",
         description:
             "Licensed builder serving Jackson & Washtenaw County with expert home improvement services. Free estimates.",
         url: "https://micrafthomesolutions.com",
