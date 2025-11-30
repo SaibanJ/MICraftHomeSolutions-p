@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Upload, X } from "lucide-react"
+import { Phone, Mail, MapPin, Upload, X, Facebook } from "lucide-react"
 import { useState, useRef, type FormEvent, type DragEvent, type ChangeEvent } from "react"
 import Image from "next/image"
 
@@ -129,6 +129,22 @@ export function CallToAction() {
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-foreground">Serving Jackson & Washtenaw County</span>
                     <span className="text-xs text-muted-foreground">And surrounding areas</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Facebook className="h-5 w-5" />
+                  </div>
+                  <div className="flex flex-col">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61584081754653"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                    >
+                      Message us on Facebook
+                    </a>
+                    <span className="text-xs text-muted-foreground">Quick response via messenger</span>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { Hammer } from "lucide-react"
+import { Hammer, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -11,7 +11,9 @@ export function Footer() {
                 <span className="font-sans text-lg font-bold text-foreground">MICraft Home Solutions</span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                {"Your trusted partner for all home repairs, maintenance, and improvements in Jackson and Washtenaw Counties."}
+                {
+                  "Your trusted partner for all home repairs, maintenance, and improvements in Jackson and Washtenaw Counties."
+                }
               </p>
             </div>
             <div className="flex flex-col gap-4">
@@ -69,7 +71,18 @@ export function Footer() {
               <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <li>(517) 862-5050</li>
                 <li>Alex@micrafthomesolutions.com</li>
-                <li>{"Serving Michigan & surrounding areas"}</li>
+                <li>{"Serving Jackson & Washtenaw Counties"}</li>
+                <li className="mt-2">
+                  <a
+                      href="https://www.facebook.com/profile.php?id=61584081754653"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 hover:text-foreground transition-colors"
+                  >
+                    <Facebook className="h-4 w-4" />
+                    <span>Follow us on Facebook</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
