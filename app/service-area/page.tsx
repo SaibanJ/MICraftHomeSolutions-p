@@ -2,11 +2,30 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { MapPin, CheckCircle2, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import type { Metadata } from "next"
 
-export const metadata = {
-    title: "Service Area - MICraft Home Solutions LLC",
+export const metadata: Metadata = {
+    title: "Service Area | Jackson & Washtenaw County Michigan",
     description:
-        "We proudly serve Jackson County and Washtenaw County, Michigan with professional home improvement and handyman services.",
+        "MICraft Home Solutions serves Jackson County (Jackson, Grass Lake, Michigan Center) and Washtenaw County (Ann Arbor, Ypsilanti, Chelsea, Saline). Licensed builder providing home improvement services throughout Southeast Michigan.",
+    keywords: [
+        "Jackson County contractor",
+        "Washtenaw County builder",
+        "Ann Arbor home improvement",
+        "Ypsilanti contractor",
+        "Chelsea builder",
+        "Jackson Michigan handyman",
+        "Saline home remodeling",
+        "Dexter contractor",
+    ],
+    alternates: {
+        canonical: "https://micrafthomesolutions.com/service-area",
+    },
+    openGraph: {
+        title: "Service Area | MICraft Home Solutions Michigan",
+        description: "Serving Jackson & Washtenaw County with professional home improvement services.",
+        url: "https://micrafthomesolutions.com/service-area",
+    },
 }
 
 export default function ServiceAreaPage() {
@@ -151,7 +170,7 @@ export default function ServiceAreaPage() {
                                     <a href="/#contact">Request Free Estimate</a>
                                 </Button>
                                 <Button asChild size="lg" variant="outline">
-                                    <a href="tel:+1(517) 862-5050" className="flex items-center gap-2">
+                                    <a href="tel:+1234567890" className="flex items-center gap-2">
                                         <Phone className="h-4 w-4" />
                                         Call Us Today
                                     </a>
