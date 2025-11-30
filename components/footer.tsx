@@ -97,10 +97,10 @@ export function Footer() {
           <div className="mt-8 border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">{"© 2025 MICraft Home Solutions LLC. All rights reserved."}</p>
             <div className="flex gap-4 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">
+              <a href="/privacy" className="hover:text-foreground transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-foreground transition-colors">
+              <a href="/terms" className="hover:text-foreground transition-colors">
                 Terms of Service
               </a>
             </div>
