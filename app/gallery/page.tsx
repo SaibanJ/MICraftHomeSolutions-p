@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
+import type { Metadata } from "next"
 
 const projects = [
     {
@@ -34,13 +35,36 @@ const projects = [
     },
 ]
 
+export const metadata: Metadata = {
+    title: "Project Gallery | Home Improvement Work in Michigan",
+    description:
+        "View our completed home improvement projects in Jackson and Washtenaw County. Kitchen remodels, flooring, cabinetry, countertops, and custom carpentry work. Quality craftsmanship by licensed builders.",
+    alternates: {
+        canonical: "https://micrafthomesolutions.com/gallery",
+    },
+    openGraph: {
+        title: "Project Gallery | MICraft Home Solutions Michigan",
+        description:
+            "See our completed home improvement projects - kitchens, flooring, cabinetry, and custom work in Michigan.",
+        url: "https://micrafthomesolutions.com/gallery",
+        images: [
+            {
+                url: "/images/kitchenremodel.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Kitchen remodel by MICraft Home Solutions",
+            },
+        ],
+    },
+}
+
 export default function GalleryPage() {
     return (
         <main className="min-h-screen bg-background">
             <Header />
 
             <section className="py-16 md:py-24">
-                <div className="container mx-auto pt-24 px-4 md:px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <div className="text-center mb-12">
                         <h1 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
                             Our Work Gallery

@@ -82,6 +82,9 @@ export const metadata: Metadata = {
         "Licensed builder serving Michigan with expert home improvement and handyman services. Free estimates.",
     images: ["/images/1ffc50f0-841a-4d3f-ab06.jpeg"],
   },
+  other: {
+    "fb:app_id": "", // Add your Facebook App ID if you have one
+  },
   robots: {
     index: true,
     follow: true,
@@ -167,6 +170,7 @@ export default function RootLayout({
                   longitude: "-84.4013",
                 },
                 url: "https://micrafthomesolutions.com",
+                sameAs: ["https://www.facebook.com/profile.php?id=61584081754653"],
                 priceRange: "$$",
                 openingHours: "Mo-Sa 08:00-18:00",
                 aggregateRating: {
