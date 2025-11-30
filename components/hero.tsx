@@ -12,7 +12,7 @@ export function Hero() {
           <div className="flex flex-col gap-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm text-primary w-fit">
               <CheckCircle2 className="h-4 w-4" />
-              <span>Licensed Builder Serving Michigan & Surrounding Areas</span>
+              <span>Licensed Builder Serving Jackson & Washtenaw Counties</span>
             </div>
             <h1 className="font-sans text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
               {"Your Home Improvement & Handyman Experts"}
