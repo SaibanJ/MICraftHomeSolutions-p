@@ -146,8 +146,7 @@ export function Header() {
                   className="absolute right-0 top-0 h-full w-[280px] bg-slate-900 shadow-2xl animate-in slide-in-from-right duration-300"
                   onClick={(e) => e.stopPropagation()}
               >
-                {/* Menu items */}
-                <div className="flex flex-col px-6 py-8 gap-1">
+                <div className="flex flex-col justify-center h-full px-6 gap-1">
                   <a
                       href="/#services"
                       className="text-base font-medium text-white/80 hover:text-white hover:bg-white/10 transition-all py-3 px-4 rounded-lg"
