@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Hammer, Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 
@@ -51,13 +52,15 @@ export function Header() {
             }`}
         >
           <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-            <Link href="/" className="flex items-center gap-2">
-              <Hammer className={`h-6 w-6 transition-colors ${isTransparent ? "text-white" : "text-primary"}`} />
-              <span
-                  className={`font-sans text-xl font-bold transition-colors ${isTransparent ? "text-white" : "text-foreground"}`}
-              >
-              MICraft Home Solutions
-            </span>
+            <Link href="/" className="flex items-center">
+              <Image
+                  src="/images/logo.png"
+                  alt="MICraft Home Solutions"
+                  width={180}
+                  height={60}
+                  className={`h-10 w-auto object-contain transition-all ${isTransparent ? "brightness-0 invert" : ""}`}
+                  priority
+              />
             </Link>
 
             {/* Desktop Navigation */}

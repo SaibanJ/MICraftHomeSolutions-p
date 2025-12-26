@@ -1,4 +1,5 @@
 import { Hammer, Facebook } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,6 +7,13 @@ export function Footer() {
         <div className="container mx-auto px-4 md:px-6 py-8">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col gap-4">
+              <Image
+                  src="/images/logo-stacked.png"
+                  alt="MICraft Home Solutions"
+                  width={150}
+                  height={150}
+                  className="h-auto w-32 object-contain"
+              />
               <div className="flex items-center gap-2">
                 <Hammer className="h-5 w-5 text-primary" />
                 <span className="font-sans text-lg font-bold text-foreground">MICraft Home Solutions</span>
