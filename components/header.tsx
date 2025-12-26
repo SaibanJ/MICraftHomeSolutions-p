@@ -56,9 +56,9 @@ export function Header() {
               <Image
                   src="/images/logo.jpg"
                   alt="MICraft Home Solutions"
-                  width={360}
-                  height={180}
-                  className={`h-50 w-auto object-contain transition-all ${isTransparent ? "brightness-0 invert" : ""}`}
+                  width={180}
+                  height={60}
+                  className={`h-20 w-auto object-contain transition-all ${isTransparent ? "brightness-0 invert" : ""}`}
                   priority
               />
             </Link>
