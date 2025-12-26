@@ -54,7 +54,7 @@ export function Header() {
           <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
             <Link href="/" className="flex items-center">
               <Image
-                  src="/images/logo.png"
+                  src="/images/logo.jpg"
                   alt="MICraft Home Solutions"
                   width={180}
                   height={60}

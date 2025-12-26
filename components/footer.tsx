@@ -8,7 +8,7 @@ export function Footer() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col gap-4">
               <Image
-                  src="/images/logo-stacked.png"
+                  src="/images/logo-stacked.jpg"
                   alt="MICraft Home Solutions"
                   width={150}
                   height={150}
