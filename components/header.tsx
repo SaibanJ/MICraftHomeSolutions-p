@@ -58,7 +58,7 @@ export function Header() {
                   alt="MICraft Home Solutions"
                   width={360}
                   height={180}
-                  className={`h-10 w-auto object-contain transition-all ${isTransparent ? "brightness-0 invert" : ""}`}
+                  className={`h-50 w-auto object-contain transition-all ${isTransparent ? "brightness-0 invert" : ""}`}
                   priority
               />
             </Link>
